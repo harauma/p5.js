@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <title>Welcome to Vue</title>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ message }}</h1>
+    <span v-bind:title="message2">
+      Hover your mouse over me for a few seconds
+      to see my dynamically bound title!
+    </span>
+    <p v-if="flg">"{{ num }}は偶数"</p>
+    <p v-else>"{{ num }}は奇数"</p>
+    <button v-on:click="countUp">countUp!</button>
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+  <script src="sketch.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
